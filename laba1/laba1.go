@@ -78,25 +78,3 @@ func main() {
 	}
 	fmt.Println("згенорований пароль:", pas)
 }
-
-// func main() {
-// 	s := "Hello, World"
-
-// 	idx := rand.Intn(len(s))
-
-// 	str := string(s[idx])
-// 	fmt.Println("random character:", str)
-// }
-
-// func main() {
-// 	var name string
-// 	var age int
-
-// 	fmt.Print("Введите имя: ")
-// 	fmt.Scanln(&name)
-
-// 	fmt.Print("Введите возраст: ")
-// 	fmt.Scanln(&age)
-
-// 	fmt.Println("Привет,", name, "Тебе", age, "лет")
-// }
