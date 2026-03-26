@@ -1,4 +1,4 @@
-package httpserver
+﻿package httpserver
 
 import (
 	"photohttp/internal/service"
@@ -15,6 +15,8 @@ func New(service *service.PhotoService) *Server {
 }
 
 func (s *Server) RegisterRoutes(r *gin.Engine) {
+	r.StaticFile("/", "./web/index.html")
+	r.StaticFile("/app.js", "./web/app.js")
 	r.GET("/health", s.health)
 	r.GET("/photo/random", s.randomPhoto)
 	r.GET("/photo/search", s.searchPhoto)
